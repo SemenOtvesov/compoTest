@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Vela/VelaSans-Medium.eot');
+    src:
+        local('Gotham Medium'),
+        local('../fonts/Vela/VelaSans-Medium'),
+        url('../fonts/Vela/VelaSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vela/VelaSans-Medium.woff2') format('woff2'),
+        url('../fonts/Vela/VelaSans-Medium.woff') format('woff'),
+        url('../fonts/Vela/VelaSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vela';
+    src: url('../fonts/Vela/VelaSans-Regular.eot');
+    src:
+        local('Vela'),
+        local('../fonts/Vela/VelaSans-Regular'),
+        url('../fonts/Vela/VelaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Vela/VelaSans-Regular.woff2') format('woff2'),
+        url('../fonts/Vela/VelaSans-Regular.woff') format('woff'),
+        url('../fonts/Vela/VelaSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

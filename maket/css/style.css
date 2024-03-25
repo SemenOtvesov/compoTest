@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Gotham", sans-serif;
+  background-color: #f9f7f7;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+  margin: 5px;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?a87uwv");
+  src: url("../fonts/icomoon.eot?a87uwv#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?a87uwv") format("truetype"), url("../fonts/icomoon.woff?a87uwv") format("woff"), url("../fonts/icomoon.svg?a87uwv#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo .path1:before {
+  content: "\e900";
+  color: rgb(21, 81, 229);
+}
+
+.icon-logo .path2:before {
+  content: "\e901";
+  margin-left: -4.7998046875em;
+  color: rgb(21, 81, 229);
+}
+
+.icon-logo .path3:before {
+  content: "\e902";
+  margin-left: -4.7998046875em;
+  color: rgb(21, 81, 229);
+}
+
+.icon-logo .path4:before {
+  content: "\e903";
+  margin-left: -4.7998046875em;
+  color: rgb(21, 81, 229);
+}
+
+.icon-logo .path5:before {
+  content: "\e904";
+  margin-left: -4.7998046875em;
+  color: rgb(21, 81, 229);
+}
+
+.icon-logo .path6:before {
+  content: "\e905";
+  margin-left: -4.7998046875em;
+  color: rgb(21, 81, 229);
+}
+
+.icon-logo .path7:before {
+  content: "\e906";
+  margin-left: -4.7998046875em;
+  color: rgb(23, 29, 69);
+}
+
+.icon-logo .path8:before {
+  content: "\e907";
+  margin-left: -4.7998046875em;
+  color: rgb(23, 29, 69);
+}
+
+.icon-logo .path9:before {
+  content: "\e908";
+  margin-left: -4.7998046875em;
+  color: rgb(23, 29, 69);
+}
+
+.icon-logo .path10:before {
+  content: "\e909";
+  margin-left: -4.7998046875em;
+  color: rgb(23, 29, 69);
+}
+
+.icon-logo .path11:before {
+  content: "\e90a";
+  margin-left: -4.7998046875em;
+  color: rgb(23, 29, 69);
+}
+
+.icon-notifications:before {
+  content: "\e915";
+}
+
+.icon-close:before {
+  content: "\e914";
+}
+
+.icon-search:before {
+  content: "\e90b";
+}
+
+.icon-message:before {
+  content: "\e90c";
+}
+
+.icon-youtube:before {
+  content: "\e90d";
+}
+
+.icon-info:before {
+  content: "\e90e";
+}
+
+.icon-video:before {
+  content: "\e90f";
+}
+
+.icon-file:before {
+  content: "\e910";
+}
+
+.icon-favourites:before {
+  content: "\e911";
+}
+
+.icon-cart:before {
+  content: "\e912";
+}
+
+.icon-burger:before {
+  content: "\e913";
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+[class*=__container] {
+  max-width: 95vw;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+  /*MOBILE*/
+  [class*=__container] {
+    max-width: none;
+  }
+}
+.body__backblur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 100;
+  opacity: 1;
+  pointer-events: all;
+}
+
+button,
+.button {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+button:hover,
+.button:hover {
+  opacity: 1;
+}
+
+picture {
+  position: relative;
+}
+
+main {
+  flex: 1 1;
+}
+
+.arrow {
+  transition: 0.3s;
+}
+.arrow span {
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 6px;
+  cursor: pointer;
+}
+.arrow span::before, .arrow span::after {
+  transition: 0.3s;
+  top: 50%;
+  left: 0;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  transition: 0.3s ease;
+  background-color: #316cff;
+  border-radius: 2px;
+  content: "";
+}
+.arrow span::before {
+  transform: rotate(-45deg) translate(25%, 100%);
+}
+.arrow span::after {
+  transform: rotate(45deg) translate(-25%, 100%);
+}
+.arrow span:hover::before, .arrow span:hover::after {
+  background-color: signature;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/Gotham-BoldItalic.eot");
+  src: local("Gotham Bold Italic"), local("../fonts/Gotham/Gotham-BoldItalic"), url("../fonts/Gotham/Gotham-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-BoldItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-BoldItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/Gotham-Book.eot");
+  src: local("Gotham Book"), local("../fonts/Gotham/Gotham-Book"), url("../fonts/Gotham/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Book.woff") format("woff"), url("../fonts/Gotham/Gotham-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/Gotham-MediumItalic.eot");
+  src: local("Gotham Medium Italic"), local("../fonts/Gotham/Gotham-MediumItalic"), url("../fonts/Gotham/Gotham-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-MediumItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-MediumItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/Gotham-BookItalic.eot");
+  src: local("Gotham Book Italic"), local("../fonts/Gotham/Gotham-BookItalic"), url("../fonts/Gotham/Gotham-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-BookItalic.woff2") format("woff2"), url("../fonts/Gotham/Gotham-BookItalic.woff") format("woff"), url("../fonts/Gotham/Gotham-BookItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/Gotham-Bold.eot");
+  src: local("Gotham Bold"), local("../fonts/Gotham/Gotham-Bold"), url("../fonts/Gotham/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham/Gotham-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/Gotham-Medium.eot");
+  src: local("Gotham Medium"), local("../fonts/Gotham/Gotham-Medium"), url("../fonts/Gotham/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/Gotham-Medium.woff2") format("woff2"), url("../fonts/Gotham/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham/Gotham-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Vela/VelaSans-Medium.eot");
+  src: local("Gotham Medium"), local("../fonts/Vela/VelaSans-Medium"), url("../fonts/Vela/VelaSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Vela/VelaSans-Medium.woff2") format("woff2"), url("../fonts/Vela/VelaSans-Medium.woff") format("woff"), url("../fonts/Vela/VelaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vela";
+  src: url("../fonts/Vela/VelaSans-Regular.eot");
+  src: local("Vela"), local("../fonts/Vela/VelaSans-Regular"), url("../fonts/Vela/VelaSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Vela/VelaSans-Regular.woff2") format("woff2"), url("../fonts/Vela/VelaSans-Regular.woff") format("woff"), url("../fonts/Vela/VelaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
